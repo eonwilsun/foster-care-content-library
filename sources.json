@@ -7,7 +7,7 @@
       "type": "website",
       "title": "Swiis Foster Care News",
       "pageUrl": "https://www.swiisfostercare.com/info-hub/",
-      "rssUrl": "https://www.swiisfostercare.com/info-hub/rss"
+      "rssUrl": "https://www.swiisfostercare.com/feed/"
     },
     {
       "id": "ours-facebook",
@@ -20,10 +20,10 @@
     },
     {
       "id": "competitor1-news",
-      "company": "Competitor 1",
+      "company": "Compass Fostering",
       "companyGroup": "competitor",
       "type": "website",
-      "title": "Competitor 1 News",
+      "title": "Compass Fostering News",
       "pageUrl": "https://www.compassfostering.com/blogs/",
       "rssUrl": "https://www.compassfostering.com/blogs/rss"
     },
