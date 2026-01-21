@@ -80,6 +80,15 @@
       "title": "NFG News & Blog",
       "pageUrl": "https://www.nfa.co.uk/news-and-blog/",
       "rssUrl": "https://www.nfa.co.uk/news-and-blog/feed/"
+    },
+    {
+      "id": "competitor5-news",
+      "company": "Capstone Foster Care",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Capstone News & Blogs",
+      "pageUrl": "https://www.capstonefostercare.co.uk/news-and-blogs",
+      "rssUrl": ""
     }
   ]
 }
