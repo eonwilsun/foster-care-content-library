@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-21T16:11:00.939Z",
+  "generatedAt": "2026-01-21T16:16:12.666Z",
   "sources": [
     {
       "id": "ours-website-news",
@@ -28,8 +28,8 @@
       "type": "website",
       "title": "Compass Fostering News",
       "pageUrl": "https://www.compassfostering.com/news/",
-      "rssUrl": "https://www.compassfostering.com/news/rss",
-      "warning": "Failed to fetch/parse feed: Status code 500"
+      "rssUrl": "",
+      "warning": "No rssUrl configured (link-only source)."
     },
     {
       "id": "competitor1-blogs",
@@ -38,8 +38,8 @@
       "type": "website",
       "title": "Compass Fostering Blogs",
       "pageUrl": "https://www.compassfostering.com/blogs/",
-      "rssUrl": "https://www.compassfostering.com/blogs/rss",
-      "warning": "Failed to fetch/parse feed: Status code 500"
+      "rssUrl": "",
+      "warning": "No rssUrl configured (link-only source)."
     },
     {
       "id": "competitor1-facebook",

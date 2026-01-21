@@ -25,7 +25,7 @@
       "type": "website",
       "title": "Compass Fostering News",
       "pageUrl": "https://www.compassfostering.com/news/",
-      "rssUrl": "https://www.compassfostering.com/news/rss"
+      "rssUrl": ""
     },
     {
       "id": "competitor1-blogs",
@@ -34,7 +34,7 @@
       "type": "website",
       "title": "Compass Fostering Blogs",
       "pageUrl": "https://www.compassfostering.com/blogs/",
-      "rssUrl": "https://www.compassfostering.com/blogs/rss"
+      "rssUrl": ""
     },
     {
       "id": "competitor1-facebook",
