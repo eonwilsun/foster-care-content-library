@@ -5,6 +5,7 @@ const els = {
   counts: document.getElementById('counts'),
   typeFilters: document.getElementById('typeFilters'),
   companyFilters: document.getElementById('companyFilters'),
+  specificCompanyFilters: document.getElementById('specificCompanyFilters'),
   search: document.getElementById('search'),
   sources: document.getElementById('sources'),
   items: document.getElementById('items'),
@@ -14,6 +15,7 @@ const els = {
 const state = {
   type: 'all',
   companyGroup: 'all',
+  specificCompany: 'all',
   q: ''
 };
 
@@ -59,6 +61,7 @@ function filterItems() {
   return data.items.filter((i) => {
     if (state.type !== 'all' && i.type !== state.type) return false;
     if (state.companyGroup !== 'all' && i.companyGroup !== state.companyGroup) return false;
+    if (state.specificCompany !== 'all' && i.company !== state.specificCompany) return false;
     if (q) {
       const hay = `${i.title || ''} ${i.snippet || ''} ${i.company || ''}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -184,6 +187,20 @@ function initFilters() {
     (v) => (state.companyGroup = v)
   );
 
+  // Build specific company filter buttons from data
+  const uniqueCompanies = [...new Set(data.items.map(item => item.company))].sort();
+  const companyButtons = [
+    { value: 'all', label: 'All' },
+    ...uniqueCompanies.map(company => ({ value: company, label: company }))
+  ];
+
+  makeButtonRow(
+    els.specificCompanyFilters,
+    companyButtons,
+    () => state.specificCompany,
+    (v) => (state.specificCompany = v)
+  );
+
   els.search.addEventListener('input', () => {
     state.q = els.search.value;
     render();
@@ -261,8 +278,6 @@ function closeModal() {
 }
 
 async function main() {
-  initFilters();
-
   // Close modal on backdrop or close button
   const modal = document.getElementById('modal');
   const closeBtn = modal.querySelector('.modal__close');
@@ -281,6 +296,9 @@ async function main() {
     els.counts.textContent = err?.message || String(err);
     return;
   }
+
+  // Initialize filters after data is loaded (so we can populate company names)
+  initFilters();
 
   const generated = data.generatedAt ? new Date(data.generatedAt) : null;
   els.generatedAt.textContent = generated
