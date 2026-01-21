@@ -71,6 +71,15 @@
       "title": "TACT Blogs",
       "pageUrl": "https://tactfostering.org.uk/blog/",
       "rssUrl": "https://tactfostering.org.uk/blog/feed/"
+    },
+    {
+      "id": "competitor4-news",
+      "company": "National Fostering Group",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "NFG News & Blog",
+      "pageUrl": "https://www.nfa.co.uk/news-and-blog/",
+      "rssUrl": "https://www.nfa.co.uk/news-and-blog/feed/"
     }
   ]
 }
