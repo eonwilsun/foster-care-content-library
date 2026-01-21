@@ -53,6 +53,24 @@
       "title": "FCA News & Resources",
       "pageUrl": "https://www.thefca.co.uk/resources/",
       "rssUrl": "https://www.thefca.co.uk/feed/"
+    },
+    {
+      "id": "competitor3-news",
+      "company": "TACT Fostering",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "TACT News",
+      "pageUrl": "https://tactfostering.org.uk/news/",
+      "rssUrl": "https://tactfostering.org.uk/news/feed/"
+    },
+    {
+      "id": "competitor3-blogs",
+      "company": "TACT Fostering",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "TACT Blogs",
+      "pageUrl": "https://tactfostering.org.uk/blog/",
+      "rssUrl": "https://tactfostering.org.uk/blog/feed/"
     }
   ]
 }
