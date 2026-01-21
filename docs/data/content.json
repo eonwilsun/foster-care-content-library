@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-21T15:51:31.819Z",
+  "generatedAt": "2026-01-21T16:11:00.939Z",
   "sources": [
     {
       "id": "ours-website-news",
@@ -27,6 +27,16 @@
       "companyGroup": "competitor",
       "type": "website",
       "title": "Compass Fostering News",
+      "pageUrl": "https://www.compassfostering.com/news/",
+      "rssUrl": "https://www.compassfostering.com/news/rss",
+      "warning": "Failed to fetch/parse feed: Status code 500"
+    },
+    {
+      "id": "competitor1-blogs",
+      "company": "Compass Fostering",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Compass Fostering Blogs",
       "pageUrl": "https://www.compassfostering.com/blogs/",
       "rssUrl": "https://www.compassfostering.com/blogs/rss",
       "warning": "Failed to fetch/parse feed: Status code 500"

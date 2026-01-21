@@ -24,10 +24,19 @@
       "companyGroup": "competitor",
       "type": "website",
       "title": "Compass Fostering News",
+      "pageUrl": "https://www.compassfostering.com/news/",
+      "rssUrl": "https://www.compassfostering.com/news/rss"
+    },
+    {
+      "id": "competitor1-blogs",
+      "company": "Compass Fostering",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Compass Fostering Blogs",
       "pageUrl": "https://www.compassfostering.com/blogs/",
       "rssUrl": "https://www.compassfostering.com/blogs/rss"
     },
-        {
+    {
       "id": "competitor1-facebook",
       "company": "Compass Fostering",
       "companyGroup": "competitor",
