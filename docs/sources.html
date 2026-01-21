@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sources Status - Content Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div>
+          <h1 class="title">Sources Status</h1>
+          <p class="subtitle">Monitor feed health and configuration.</p>
+        </div>
+        <div class="meta">
+          <div class="meta__line" id="generatedAt">Loading…</div>
+          <div class="meta__line" id="counts"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div style="margin-bottom: 20px;">
+        <a href="index.html" class="navButton">
+          ← Back to Feed
+        </a>
+      </div>
+
+      <section class="sources" id="sources"></section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          Powered by GitHub Pages + a scheduled GitHub Action snapshot.
+        </div>
+      </div>
+    </footer>
+
+    <script src="sources-app.js" type="module"></script>
+  </body>
+</html>

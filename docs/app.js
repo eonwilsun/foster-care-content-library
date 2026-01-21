@@ -53,58 +53,6 @@ async function load() {
   data = await res.json();
 }
 
-function renderSources() {
-  els.sources.innerHTML = '';
-  for (const s of data.sources) {
-    const card = document.createElement('div');
-    card.className = 'sourceCard';
-
-    const left = document.createElement('div');
-    left.className = 'sourceCard__left';
-
-    const title = document.createElement('div');
-    title.className = 'sourceCard__title';
-    const a = document.createElement('a');
-    a.href = s.pageUrl;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.textContent = s.title;
-    title.appendChild(a);
-
-    const meta = document.createElement('div');
-    meta.className = 'sourceCard__meta';
-    meta.textContent = `${s.company} • ${s.type === 'facebook' ? 'Facebook' : 'Website'} • ${s.companyGroup === 'competitor' ? 'Competitor' : 'Ours'}`;
-
-    left.appendChild(title);
-    left.appendChild(meta);
-
-    const right = document.createElement('div');
-    if (s.rssUrl) {
-      const chip = document.createElement('span');
-      chip.className = 'chip chip--ok';
-      chip.textContent = 'Feed enabled';
-      right.appendChild(chip);
-    } else {
-      const chip = document.createElement('span');
-      chip.className = 'chip chip--warn';
-      chip.textContent = 'Link only (no RSS)';
-      right.appendChild(chip);
-    }
-
-    if (s.warning) {
-      const warn = document.createElement('div');
-      warn.className = 'chip chip--warn';
-      warn.style.marginTop = '8px';
-      warn.textContent = s.warning;
-      right.appendChild(warn);
-    }
-
-    card.appendChild(left);
-    card.appendChild(right);
-    els.sources.appendChild(card);
-  }
-}
-
 function filterItems() {
   const q = state.q.trim().toLowerCase();
 
@@ -251,7 +199,6 @@ async function main() {
 
   els.counts.textContent = `${totalItems} items • ${totalSources} sources (${feedEnabled} with feeds)`;
 
-  renderSources();
   render();
 }
 
