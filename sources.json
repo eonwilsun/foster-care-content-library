@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "id": "ours-website-news",
+      "company": "Swiis Foster Care",
+      "companyGroup": "Swiis",
+      "type": "website",
+      "title": "Swiis Foster Care News",
+      "pageUrl": "https://www.swiisfostercare.com/info-hub/",
+      "rssUrl": "https://www.swiisfostercare.com/info-hub/rss"
+    },
+    {
+      "id": "ours-facebook",
+      "company": "Swiis Foster Care",
+      "companyGroup": "Swiis",
+      "type": "facebook",
+      "title": "Swiis Foster Care Facebook",
+      "pageUrl": "https://www.facebook.com/swiisfostercare",
+      "rssUrl": ""
+    },
+    {
+      "id": "competitor1-news",
+      "company": "Competitor 1",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Competitor 1 News",
+      "pageUrl": "https://www.compassfostering.com/blogs/",
+      "rssUrl": "https://www.compassfostering.com/blogs/rss"
+    },
+        {
+      "id": "competitor1-facebook",
+      "company": "Compass Fostering",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "Compass Fostering Facebook",
+      "pageUrl": "https://www.facebook.com/CompassFostering/",
+      "rssUrl": ""
+    }
+  ]
+}

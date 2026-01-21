@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-01-21T08:16:52.244Z",
+  "sources": [
+    {
+      "id": "ours-website-news",
+      "company": "Swiis Foster Care",
+      "companyGroup": "ours",
+      "type": "website",
+      "title": "Swiis Foster Care News",
+      "pageUrl": "https://www.swiisfostercare.com/info-hub/",
+      "rssUrl": "https://www.swiisfostercare.com/info-hub/rss",
+      "warning": null
+    },
+    {
+      "id": "ours-facebook",
+      "company": "Swiis Foster Care",
+      "companyGroup": "ours",
+      "type": "facebook",
+      "title": "Swiis Foster Care Facebook",
+      "pageUrl": "https://www.facebook.com/swiisfostercare",
+      "rssUrl": "",
+      "warning": "No rssUrl configured (link-only source)."
+    },
+    {
+      "id": "competitor1-news",
+      "company": "Competitor 1",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Competitor 1 News",
+      "pageUrl": "https://www.compassfostering.com/blogs/",
+      "rssUrl": "https://www.compassfostering.com/blogs/rss",
+      "warning": "Failed to fetch/parse feed: Status code 500"
+    },
+    {
+      "id": "competitor1-facebook",
+      "company": "Compass Fostering",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "Compass Fostering Facebook",
+      "pageUrl": "https://www.facebook.com/CompassFostering/",
+      "rssUrl": "",
+      "warning": "No rssUrl configured (link-only source)."
+    }
+  ],
+  "items": []
+}

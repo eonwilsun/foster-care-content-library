@@ -1,0 +1,11 @@
+{
+  "name": "foster-care-content-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:feeds": "node scripts/build-feeds.mjs"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}

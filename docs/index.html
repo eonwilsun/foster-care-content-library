@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Content Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div>
+          <h1 class="title">Content Library</h1>
+          <p class="subtitle">All recent posts in one place.</p>
+        </div>
+        <div class="meta">
+          <div class="meta__line" id="generatedAt">Loading…</div>
+          <div class="meta__line" id="counts"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="controls">
+        <div class="controlGroup">
+          <div class="controlLabel">Type</div>
+          <div class="buttonRow" id="typeFilters"></div>
+        </div>
+        <div class="controlGroup">
+          <div class="controlLabel">Company</div>
+          <div class="buttonRow" id="companyFilters"></div>
+        </div>
+        <div class="controlGroup controls__search">
+          <div class="controlLabel">Search</div>
+          <input id="search" class="search" type="search" placeholder="Search titles/snippets…" />
+        </div>
+      </section>
+
+      <section class="sources" id="sources"></section>
+
+      <section class="feed">
+        <div class="feedHeader">
+          <h2 class="feedHeader__title">Latest</h2>
+          <div class="feedHeader__right" id="visibleCount"></div>
+        </div>
+        <div class="grid" id="items"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          Powered by GitHub Pages + a scheduled GitHub Action snapshot.
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
