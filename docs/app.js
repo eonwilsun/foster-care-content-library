@@ -93,19 +93,22 @@ function renderItems(items) {
     const card = document.createElement('div');
     card.className = 'card';
 
+    // Add image thumbnail if available
+    if (i.images && i.images.length > 0) {
+      const img = document.createElement('img');
+      img.className = 'card__image';
+      img.src = i.images[0];
+      img.alt = i.title || '';
+      img.loading = 'lazy';
+      card.appendChild(img);
+    }
+
     const top = document.createElement('div');
     top.className = 'card__top';
 
     const h = document.createElement('h3');
     h.className = 'card__title';
-
-    const a = document.createElement('a');
-    a.href = i.link;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.textContent = i.title || '(untitled)';
-
-    h.appendChild(a);
+    h.textContent = i.title || '(untitled)';
 
     const chips = document.createElement('div');
     chips.className = 'chip';
@@ -124,11 +127,9 @@ function renderItems(items) {
     const left = document.createElement('div');
     left.textContent = `${i.company} • ${formatDate(i.isoDate)}`;
 
-    const right = document.createElement('a');
-    right.href = i.pageUrl;
-    right.target = '_blank';
-    right.rel = 'noopener noreferrer';
-    right.textContent = 'Source';
+    const right = document.createElement('span');
+    right.textContent = 'View';
+    right.style.color = 'var(--accent)';
 
     footer.appendChild(left);
     footer.appendChild(right);
@@ -136,6 +137,9 @@ function renderItems(items) {
     card.appendChild(top);
     if (i.snippet) card.appendChild(snippet);
     card.appendChild(footer);
+
+    // Open modal on click
+    card.addEventListener('click', () => openModal(i));
 
     els.items.appendChild(card);
   }
@@ -177,8 +181,89 @@ function initFilters() {
   });
 }
 
+function openModal(item) {
+  const modal = document.getElementById('modal');
+  const modalBody = document.getElementById('modalBody');
+  
+  modalBody.innerHTML = '';
+
+  const title = document.createElement('h2');
+  title.className = 'modal__title';
+  title.textContent = item.title || '(untitled)';
+
+  const meta = document.createElement('div');
+  meta.className = 'modal__meta';
+  meta.innerHTML = `
+    <span>${item.company}</span>
+    <span>•</span>
+    <span>${item.type === 'facebook' ? 'Facebook' : 'Website'}</span>
+    <span>•</span>
+    <span>${formatDate(item.isoDate)}</span>
+  `;
+
+  modalBody.appendChild(title);
+  modalBody.appendChild(meta);
+
+  // Show images
+  if (item.images && item.images.length > 0) {
+    const imagesContainer = document.createElement('div');
+    imagesContainer.className = 'modal__images';
+    item.images.forEach((imgSrc) => {
+      const img = document.createElement('img');
+      img.className = 'modal__image';
+      img.src = imgSrc;
+      img.alt = item.title || '';
+      imagesContainer.appendChild(img);
+    });
+    modalBody.appendChild(imagesContainer);
+  }
+
+  // Show content (try to render HTML or fallback to snippet)
+  const contentDiv = document.createElement('div');
+  contentDiv.className = 'modal__content-text';
+  
+  if (item.content) {
+    // Strip script tags for safety
+    const safeContent = item.content.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+    contentDiv.innerHTML = safeContent;
+  } else if (item.snippet) {
+    const p = document.createElement('p');
+    p.textContent = item.snippet;
+    contentDiv.appendChild(p);
+  }
+
+  modalBody.appendChild(contentDiv);
+
+  // Add link to original
+  const link = document.createElement('a');
+  link.className = 'modal__link';
+  link.href = item.link;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = 'Read full article →';
+  modalBody.appendChild(link);
+
+  modal.classList.add('modal--open');
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.classList.remove('modal--open');
+}
+
 async function main() {
   initFilters();
+
+  // Close modal on backdrop or close button
+  const modal = document.getElementById('modal');
+  const closeBtn = modal.querySelector('.modal__close');
+  const backdrop = modal.querySelector('.modal__backdrop');
+  
+  closeBtn.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
 
   try {
     await load();
