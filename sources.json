@@ -89,6 +89,42 @@
       "title": "Capstone News & Blogs",
       "pageUrl": "https://www.capstonefostercare.co.uk/news-and-blogs",
       "rssUrl": ""
+    },
+    {
+      "id": "competitor6-news",
+      "company": "Foster Plus",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Foster Plus News & Blogs",
+      "pageUrl": "https://www.fosterplus.co.uk/resources/news-blogs/",
+      "rssUrl": "https://www.fosterplus.co.uk/feed/"
+    },
+    {
+      "id": "competitor7-news",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Fostering Somerset News",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "rssUrl": ""
+    },
+    {
+      "id": "competitor8-news",
+      "company": "Orange Grove Foster Care",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Orange Grove News",
+      "pageUrl": "https://www.orangegrovefostercare.co.uk/resources/news/",
+      "rssUrl": "https://www.orangegrovefostercare.co.uk/resources/news/feed/"
+    },
+    {
+      "id": "competitor8-blogs",
+      "company": "Orange Grove Foster Care",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "Orange Grove Blogs",
+      "pageUrl": "https://www.orangegrovefostercare.co.uk/resources/blogs/",
+      "rssUrl": "https://www.orangegrovefostercare.co.uk/resources/blogs/feed/"
     }
   ]
 }
