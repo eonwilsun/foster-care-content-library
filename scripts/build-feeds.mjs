@@ -135,58 +135,57 @@ async function fetchSourceItems(source) {
       const snippet = normalizeText(item.contentSnippet || item.summary || '');
       const content = String(item.contentEncoded || item.content || item.description || '').trim();
 
-      // Extract images from various RSS feed formats
-      const images = [];
+      // Always try to fetch featured image from article page first for consistency
+      let finalImages = [];
       
-      // 1) enclosure tag (podcasts, some blogs)
-      if (item.enclosure?.url && /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.enclosure.url)) {
-        images.push(item.enclosure.url);
-      }
-      
-      // 2) media:content or media:thumbnail (YouTube, some news)
-      if (item['media:content']) {
-        const mc = Array.isArray(item['media:content']) ? item['media:content'] : [item['media:content']];
-        mc.forEach((m) => {
-          if (m?.$ && m.$.url && /image/i.test(m.$.medium || m.$.type || '')) {
-            images.push(m.$.url);
-          }
-        });
-      }
-      if (item['media:thumbnail'] && item['media:thumbnail'].$ && item['media:thumbnail'].$.url) {
-        images.push(item['media:thumbnail'].$.url);
-      }
-      
-      // 3) itunes:image (podcasts)
-      if (item.itunes?.image) {
-        images.push(item.itunes.image);
-      }
-      
-      // 4) Parse <img> from content/description HTML (WordPress and most blogs)
-      if (content) {
-        const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
-        let match;
-        while ((match = imgRegex.exec(content)) !== null) {
-          if (match[1] && /^https?:\/\//i.test(match[1])) {
-            images.push(match[1]);
-          }
-        }
-      }
-
-      // Remove duplicates and filter images
-      let uniqueImages = [...new Set(images)];
-      
-      // Skip first image if there are multiple (WordPress often puts logo/icon first)
-      // Only do this if there are 2+ images to avoid removing the only image
-      let finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
-      
-      // If no images found in RSS, try fetching featured image from article page
-      if (finalImages.length === 0 && link) {
-        console.log(`  No images in RSS for "${title.substring(0, 50)}...", fetching from page...`);
+      if (link) {
         const featuredImage = await fetchFeaturedImage(link);
         if (featuredImage) {
           finalImages = [featuredImage];
-          console.log(`  ✓ Found featured image`);
         }
+      }
+      
+      // If no featured image found, fall back to extracting from RSS feed
+      if (finalImages.length === 0) {
+        const images = [];
+        
+        // 1) enclosure tag (podcasts, some blogs)
+        if (item.enclosure?.url && /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.enclosure.url)) {
+          images.push(item.enclosure.url);
+        }
+        
+        // 2) media:content or media:thumbnail (YouTube, some news)
+        if (item['media:content']) {
+          const mc = Array.isArray(item['media:content']) ? item['media:content'] : [item['media:content']];
+          mc.forEach((m) => {
+            if (m?.$ && m.$.url && /image/i.test(m.$.medium || m.$.type || '')) {
+              images.push(m.$.url);
+            }
+          });
+        }
+        if (item['media:thumbnail'] && item['media:thumbnail'].$ && item['media:thumbnail'].$.url) {
+          images.push(item['media:thumbnail'].$.url);
+        }
+        
+        // 3) itunes:image (podcasts)
+        if (item.itunes?.image) {
+          images.push(item.itunes.image);
+        }
+        
+        // 4) Parse <img> from content/description HTML (WordPress and most blogs)
+        if (content) {
+          const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
+          let match;
+          while ((match = imgRegex.exec(content)) !== null) {
+            if (match[1] && /^https?:\/\//i.test(match[1])) {
+              images.push(match[1]);
+            }
+          }
+        }
+
+        // Remove duplicates and skip first image if multiple (often logos)
+        const uniqueImages = [...new Set(images)];
+        finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
       }
 
       const normalizedItem = {
