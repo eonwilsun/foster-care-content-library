@@ -44,6 +44,15 @@
       "title": "Compass Fostering Facebook",
       "pageUrl": "https://www.facebook.com/CompassFostering/",
       "rssUrl": ""
+    },
+    {
+      "id": "competitor2-news",
+      "company": "Foster Care Associates",
+      "companyGroup": "competitor",
+      "type": "website",
+      "title": "FCA News & Resources",
+      "pageUrl": "https://www.thefca.co.uk/resources/",
+      "rssUrl": "https://www.thefca.co.uk/feed/"
     }
   ]
 }
