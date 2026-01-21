@@ -137,6 +137,13 @@ async function fetchSourceItems(source) {
         }
       }
 
+      // Remove duplicates and filter images
+      const uniqueImages = [...new Set(images)];
+      
+      // Skip first image if there are multiple (WordPress often puts logo/icon first)
+      // Only do this if there are 2+ images to avoid removing the only image
+      const finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
+
       const normalizedItem = {
         sourceId: source.id,
         sourceTitle: source.title,
@@ -149,7 +156,7 @@ async function fetchSourceItems(source) {
         isoDate,
         snippet,
         content,
-        images: [...new Set(images)].slice(0, 10)
+        images: finalImages.slice(0, 10)
       };
 
       return {
