@@ -127,9 +127,15 @@ function renderItems(items) {
     const left = document.createElement('div');
     left.textContent = `${i.company} • ${formatDate(i.isoDate)}`;
 
-    const right = document.createElement('span');
+    const right = document.createElement('a');
+    right.href = i.link;
+    right.target = '_blank';
+    right.rel = 'noopener noreferrer';
     right.textContent = 'View';
     right.style.color = 'var(--accent)';
+    right.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
 
     footer.appendChild(left);
     footer.appendChild(right);
@@ -138,8 +144,11 @@ function renderItems(items) {
     if (i.snippet) card.appendChild(snippet);
     card.appendChild(footer);
 
-    // Open modal on click
-    card.addEventListener('click', () => openModal(i));
+    // Click card to open article
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', () => {
+      window.open(i.link, '_blank', 'noopener,noreferrer');
+    });
 
     els.items.appendChild(card);
   }
