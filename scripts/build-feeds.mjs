@@ -15,6 +15,11 @@ const parser = new Parser({
   timeout: 20000,
   headers: {
     'User-Agent': 'github-pages-feed-aggregator (+https://github.com/)'
+  },
+  customFields: {
+    item: [
+      ['content:encoded', 'contentEncoded']
+    ]
   }
 });
 
@@ -93,7 +98,7 @@ async function fetchSourceItems(source) {
       const title = normalizeText(item.title || '(untitled)');
       const link = String(item.link || '').trim();
       const snippet = normalizeText(item.contentSnippet || item.summary || '');
-      const content = String(item.content || item['content:encoded'] || item.description || '').trim();
+      const content = String(item.contentEncoded || item.content || item.description || '').trim();
 
       // Extract images from various RSS feed formats
       const images = [];
@@ -121,12 +126,14 @@ async function fetchSourceItems(source) {
         images.push(item.itunes.image);
       }
       
-      // 4) Parse <img> from content/description HTML
-      const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
-      let match;
-      while ((match = imgRegex.exec(content)) !== null) {
-        if (match[1] && /^https?:\/\//i.test(match[1])) {
-          images.push(match[1]);
+      // 4) Parse <img> from content/description HTML (WordPress and most blogs)
+      if (content) {
+        const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
+        let match;
+        while ((match = imgRegex.exec(content)) !== null) {
+          if (match[1] && /^https?:\/\//i.test(match[1])) {
+            images.push(match[1]);
+          }
         }
       }
 
