@@ -11,6 +11,41 @@ const SOURCES_PATH = path.join(ROOT, 'sources.json');
 const OUT_DIR = path.join(ROOT, 'docs', 'data');
 const OUT_PATH = path.join(OUT_DIR, 'content.json');
 
+// Fetch featured image from article page if not in RSS feed
+async function fetchFeaturedImage(url) {
+  try {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0' }
+    });
+    if (!response.ok) return null;
+    
+    const html = await response.text();
+    
+    // Try multiple patterns for featured images
+    const patterns = [
+      // WordPress featured image in meta tags
+      /<meta property="og:image" content="([^"]+)"/i,
+      /<meta name="twitter:image" content="([^"]+)"/i,
+      // WordPress featured image in article
+      /<article[^>]*>[\s\S]*?<img[^>]+src=["']([^"']+)["']/i,
+      // First image in main content
+      /<main[^>]*>[\s\S]*?<img[^>]+src=["']([^"']+)["']/i
+    ];
+    
+    for (const pattern of patterns) {
+      const match = html.match(pattern);
+      if (match && match[1] && /^https?:\/\//i.test(match[1])) {
+        return match[1];
+      }
+    }
+    
+    return null;
+  } catch (error) {
+    console.error(`Failed to fetch featured image from ${url}:`, error.message);
+    return null;
+  }
+}
+
 const parser = new Parser({
   timeout: 20000,
   headers: {
@@ -88,7 +123,7 @@ async function fetchSourceItems(source) {
 
   try {
     const feed = await parser.parseURL(source.rssUrl);
-    const items = (feed.items || []).map((item) => {
+    const items = await Promise.all((feed.items || []).map(async (item) => {
       const isoDate =
         toIsoDate(item.isoDate) ||
         toIsoDate(item.pubDate) ||
@@ -138,11 +173,21 @@ async function fetchSourceItems(source) {
       }
 
       // Remove duplicates and filter images
-      const uniqueImages = [...new Set(images)];
+      let uniqueImages = [...new Set(images)];
       
       // Skip first image if there are multiple (WordPress often puts logo/icon first)
       // Only do this if there are 2+ images to avoid removing the only image
-      const finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
+      let finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
+      
+      // If no images found in RSS, try fetching featured image from article page
+      if (finalImages.length === 0 && link) {
+        console.log(`  No images in RSS for "${title.substring(0, 50)}...", fetching from page...`);
+        const featuredImage = await fetchFeaturedImage(link);
+        if (featuredImage) {
+          finalImages = [featuredImage];
+          console.log(`  ✓ Found featured image`);
+        }
+      }
 
       const normalizedItem = {
         sourceId: source.id,
@@ -168,7 +213,7 @@ async function fetchSourceItems(source) {
         }),
         ...normalizedItem
       };
-    });
+    }));
 
     return { items, warning: null };
   } catch (err) {
