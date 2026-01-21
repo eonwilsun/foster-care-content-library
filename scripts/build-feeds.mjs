@@ -93,6 +93,42 @@ async function fetchSourceItems(source) {
       const title = normalizeText(item.title || '(untitled)');
       const link = String(item.link || '').trim();
       const snippet = normalizeText(item.contentSnippet || item.summary || '');
+      const content = String(item.content || item['content:encoded'] || item.description || '').trim();
+
+      // Extract images from various RSS feed formats
+      const images = [];
+      
+      // 1) enclosure tag (podcasts, some blogs)
+      if (item.enclosure?.url && /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.enclosure.url)) {
+        images.push(item.enclosure.url);
+      }
+      
+      // 2) media:content or media:thumbnail (YouTube, some news)
+      if (item['media:content']) {
+        const mc = Array.isArray(item['media:content']) ? item['media:content'] : [item['media:content']];
+        mc.forEach((m) => {
+          if (m?.$ && m.$.url && /image/i.test(m.$.medium || m.$.type || '')) {
+            images.push(m.$.url);
+          }
+        });
+      }
+      if (item['media:thumbnail'] && item['media:thumbnail'].$ && item['media:thumbnail'].$.url) {
+        images.push(item['media:thumbnail'].$.url);
+      }
+      
+      // 3) itunes:image (podcasts)
+      if (item.itunes?.image) {
+        images.push(item.itunes.image);
+      }
+      
+      // 4) Parse <img> from content/description HTML
+      const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
+      let match;
+      while ((match = imgRegex.exec(content)) !== null) {
+        if (match[1] && /^https?:\/\//i.test(match[1])) {
+          images.push(match[1]);
+        }
+      }
 
       const normalizedItem = {
         sourceId: source.id,
@@ -104,7 +140,9 @@ async function fetchSourceItems(source) {
         title,
         link,
         isoDate,
-        snippet
+        snippet,
+        content,
+        images: [...new Set(images)].slice(0, 10)
       };
 
       return {
