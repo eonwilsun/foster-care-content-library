@@ -132,15 +132,15 @@ async function scrapeFosteringSomerset() {
     const html = await response.text();
     const articles = [];
     
-    // Somerset structure: <article> ... <a href="/news/[slug]"> ... <span class="day"><span class="number">18</span> ... <span class="month">Dec</span> ... <h2 class="title"><a href="...">TITLE</a></h2>
-    const articleRegex = /<article[^>]*>[\s\S]*?<a[^>]*href="(\/news\/[^"]+)"[^>]*style="background-image: url\(([^)]+)\)[^>]*>[\s\S]*?<span class="number">(\d+)<\/span>[\s\S]*?<span class="month">([^<]+)<\/span>[\s\S]*?<h2 class="title"><a[^>]*>([^<]+)<\/a><\/h2>/gi;
+    // Somerset structure: <article> ... <a href="/news/[slug]"> ... <span class="day"><span class="number">18</span> ... <span class="month">Dec</span> ... <h2 class="title"><a href="...">TITLE</a></h2> ... <div class="text">SNIPPET</div>
+    const articleRegex = /<article[^>]*>[\s\S]*?<a[^>]*href="(\/news\/[^"]+)"[^>]*style="background-image: url\(([^)]+)\)[^>]*>[\s\S]*?<span class="number">(\d+)<\/span>[\s\S]*?<span class="month">([^<]+)<\/span>[\s\S]*?<h2 class="title"><a[^>]*>([^<]+)<\/a><\/h2>[\s\S]*?<div class="text">\s*<div class="text">\s*([^<]+?)<\/div>/gi;
     
     let match;
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth(); // 0-11
     
     while ((match = articleRegex.exec(html)) !== null && articles.length < 10) {
-      const [, link, imageStyle, day, month, title] = match;
+      const [, link, imageStyle, day, month, title, snippet] = match;
       
       // Parse date from day/month - assume year is current or previous year
       // If the date would be in the future, it's from last year
@@ -171,7 +171,7 @@ async function scrapeFosteringSomerset() {
         title: title.trim(),
         link: `https://www.fosteringinsomerset.org.uk${link.trim()}`,
         pubDate,
-        contentSnippet: '',
+        contentSnippet: snippet ? snippet.trim().replace(/&rsquo;/g, "'").replace(/&hellip;/g, '...') : '',
         image: imageUrl
       });
     }
