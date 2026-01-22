@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-22T16:26:14.000Z",
+  "generatedAt": "2026-01-22T16:39:12.401Z",
   "sources": [
     {
       "id": "ours-website-news",
@@ -143,174 +143,6 @@
     }
   ],
   "items": [
-    {
-      "id": "competitor7-news:5db65ec7",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Somerset business spreads Christmas cheer to children in care",
-      "link": "https://www.fosteringinsomerset.org.uk/news/somerset-business-spreads-christmas-cheer-to-children-in-care.htm",
-      "isoDate": "2026-12-18T00:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/IMG_2387+small.webp"
-      ]
-    },
-    {
-      "id": "competitor7-news:83d51da3",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Stepping Stones visit parliament in support of National Supported Lodgings Week",
-      "link": "https://www.fosteringinsomerset.org.uk/news/stepping-stones-visit-parliament-in-support-of-national-supported-lodgings-week.htm",
-      "isoDate": "2026-11-13T00:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/Leon,+Pat,+Di,+Coleen+and+Leon+at+the+Host+the+Future+event+2000x1333.webp"
-      ]
-    },
-    {
-      "id": "competitor7-news:2613656c",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "RAF Veteran takes young people under wing",
-      "link": "https://www.fosteringinsomerset.org.uk/news/307.htm",
-      "isoDate": "2026-11-01T00:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/0nxcg5rz638840346789949272.png"
-      ]
-    },
-    {
-      "id": "competitor7-news:b5bc2eab",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "How Stepping Stones Carers are supporting care leavers",
-      "link": "https://www.fosteringinsomerset.org.uk/news/how-stepping-stones-carers-are-supporting-care-leavers.htm",
-      "isoDate": "2026-11-01T00:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/egyaaziz638344280357506510.JPG"
-      ]
-    },
-    {
-      "id": "competitor7-news:441bd5da",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "National Parenting Week: Helping families stay together",
-      "link": "https://www.fosteringinsomerset.org.uk/news/national-parenting-week-helping-families-stay-together.htm",
-      "isoDate": "2026-10-12T23:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/fou35ljf638327978213193625.jpg"
-      ]
-    },
-    {
-      "id": "competitor7-news:fd44bf9a",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Urgent call for more foster carers in Somerset",
-      "link": "https://www.fosteringinsomerset.org.uk/news/urgent-call-for-more-foster-carers-in-somerset.htm",
-      "isoDate": "2026-10-06T23:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/iysxqr0b638639000661925856.jpg"
-      ]
-    },
-    {
-      "id": "competitor7-news:6dd0c4aa",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Foster Homes To Forever Homes",
-      "link": "https://www.fosteringinsomerset.org.uk/news/foster-homes-to-forever-homes.htm",
-      "isoDate": "2026-10-03T23:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/ed1cq4gp638320221021580595.jpg"
-      ]
-    },
-    {
-      "id": "competitor7-news:5a8bf3bd",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Get set, foster!",
-      "link": "https://www.fosteringinsomerset.org.uk/news/get-set-foster.htm",
-      "isoDate": "2026-08-26T23:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": []
-    },
-    {
-      "id": "competitor7-news:a948946b",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Foster couple highlight urgent need for homes this Foster Care Fortnight",
-      "link": "https://www.fosteringinsomerset.org.uk/news/foster-couple-highlight-urgent-need-for-homes-this-foster-care-fortnight.htm",
-      "isoDate": "2026-05-13T23:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/x4z211f5638840340761050127.jpg"
-      ]
-    },
-    {
-      "id": "competitor7-news:8dbb84ba",
-      "sourceId": "competitor7-news",
-      "sourceTitle": "Fostering Somerset News",
-      "company": "Fostering Somerset",
-      "companyGroup": "competitor",
-      "type": "website",
-      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
-      "title": "Urgent need for Somerset residents to support local children in care",
-      "link": "https://www.fosteringinsomerset.org.uk/news/urgent-need-for-somerset-residents-to-support-local-children-in-care.htm",
-      "isoDate": "2026-02-01T00:00:00.000Z",
-      "snippet": "",
-      "content": "",
-      "images": [
-        "https://www.fosteringinsomerset.org.uk/NewsArticles/gghmg5in638423960256803166.png"
-      ]
-    },
     {
       "id": "competitor4-news:cdc277a9",
       "sourceId": "competitor4-news",
@@ -683,6 +515,23 @@
       "content": "",
       "images": [
         "https://www.compassfostering.com/wp-content/smush-webp/2025/12/Featured-Image-Compass-Fostering-News-27.png.webp?x24979"
+      ]
+    },
+    {
+      "id": "competitor7-news:b63a8506",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Somerset business spreads Christmas cheer to children in care",
+      "link": "https://www.fosteringinsomerset.org.uk/news/somerset-business-spreads-christmas-cheer-to-children-in-care.htm",
+      "isoDate": "2025-12-18T00:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fIMG_2387&#x2B;small.webp&amp;MaxWidth=700&amp;MaxHeight=700"
       ]
     },
     {
@@ -1094,6 +943,23 @@
       ]
     },
     {
+      "id": "competitor7-news:2ac9d222",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Stepping Stones visit parliament in support of National Supported Lodgings Week",
+      "link": "https://www.fosteringinsomerset.org.uk/news/stepping-stones-visit-parliament-in-support-of-national-supported-lodgings-week.htm",
+      "isoDate": "2025-11-13T00:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fLeon%2c&#x2B;Pat%2c&#x2B;Di%2c&#x2B;Coleen&#x2B;and&#x2B;Leon&#x2B;at&#x2B;the&#x2B;Host&#x2B;the&#x2B;Future&#x2B;event&#x2B;2000x1333.webp&amp;MaxWidth=700&amp;MaxHeight=700"
+      ]
+    },
+    {
       "id": "ours-website-news:c5880944",
       "sourceId": "ours-website-news",
       "sourceTitle": "Swiis Foster Care News",
@@ -1159,6 +1025,40 @@
       "content": "<div id=\"image-text-block_fdd8ce4df130d50d9f0a0a5a731737f3\" class=\"custom-block image-text-block alignfull image-left mobile-image-first has-none-background-color theme-none spacing-top-half spacing-bottom-half width-full\" data-emergence=\"hidden\">\n    <div class=\"container\">\n        <div class=\"content\">\n            <p>When you foster, your family fosters too. So, before you begin this life-changing journey, it’s important to reflect on the impact fostering could have on your own children.</p>\n<p>From changes in family dynamics and adjusting to a new routine, to learning how to empathise with others and work as a team, fostering can be both beneficial and challenging for your own children.</p>\n<p>Join us as we explore the impact of foster care on your own children and ways you can support them from before you begin fostering, through welcoming a child into your home, up until you say goodbye.</p>\n                    </div>\n\n                    <div class=\"media\">\n                <div class=\"img-wrapper\"><img loading=\"lazy\" decoding=\"async\" width=\"625\" height=\"417\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-625x417.jpg\" class=\"attachment-half-width-desktop size-half-width-desktop\" alt=\"Impact of Fostering on Your Own Children\" srcset=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-625x417.jpg 625w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-365x243.jpg 365w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-875x584.jpg 875w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-176x117.jpg 176w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-768x512.jpg 768w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics-952x635.jpg 952w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-and-family-dynamics.jpg 1000w\" sizes=\"(max-width: 625px) 100vw, 625px\" /></div>\n            </div>\n            </div>\n</div>\n\n\n<div id=\"image-text-block_e03ecfa64f8d2e3b59442fea2d9c2b01\" class=\"custom-block image-text-block alignfull image-right mobile-image-first has-none-background-color theme-none spacing-top-half spacing-bottom-full width-full\" data-emergence=\"hidden\">\n    <div class=\"container\">\n        <div class=\"content\">\n            <h2>Fostering and family dynamics</h2>\n<p>Every family has a unique dynamic, shaped by our everyday routines, roles, and relationships. When a foster child moves into your home, those dynamics will naturally change, and here’s why:</p>\n<ul>\n<li>Routine adjustments: Your whole family will need to adjust to changes in your routine, which may include attending meetings, appointments, family time, training sessions, and more.</li>\n<li>Balancing attention: You&#8217;ll have to balance your time and attention between your own children and the children you foster.</li>\n<li>Changing roles: Your children&#8217;s place in the family may shift. For example, if you foster a younger child, your own children may take on new roles as older siblings and role models.</li>\n<li>Parenting approaches: You may need to approach parenting differently for your own children and the children you foster due to their trauma.</li>\n<li>New boundaries: You may need to introduce new boundaries, rules, and responsibilities which can take some getting used to.</li>\n</ul>\n                    </div>\n\n                    <div class=\"media\">\n                <div class=\"img-wrapper\"><img loading=\"lazy\" decoding=\"async\" width=\"625\" height=\"417\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-625x417.jpg\" class=\"attachment-half-width-desktop size-half-width-desktop\" alt=\"fostering benefits\" srcset=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-625x417.jpg 625w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-365x243.jpg 365w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-875x584.jpg 875w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-176x117.jpg 176w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-768x512.jpg 768w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-952x635.jpg 952w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits.jpg 1000w\" sizes=\"(max-width: 625px) 100vw, 625px\" /></div>\n            </div>\n            </div>\n</div>\n\n<div id=\"cta-banner-block-block_7dda8c659d770dcf7120423ec82d8f40\" class=\"custom-block cta-banner-block alignfull has-dark-orange-background-color has-dark-background theme-none spacing-top-full spacing-bottom-full width-full text-align-right\">\n    \n    <div class=\"container cta-banner-columns\">\n        \n        <div class=\"content\">\n            <p><!--StartFragment --></p>\n<p><span class=\"cf0\">Download our Orange Grove Guide to Fostering as a Birth Child and get helpful insights on how fostering can positively affect your children and support their journey.</span></p>\n        </div>\n\n                    <div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n                                    <div class=\"wp-block-button \">\n                        <a class=\"wp-block-button__link wp-element-button\"  rel='noopener' target='_blank' href=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/06/orange-grove-guide-to-fostering-as-a-birth-child.pdf\">\n                            DOWNLOAD OUR GUIDE                        </a>\n                    </div>\n                            </div>\n            </div>\n</div>\n\n\n<div id=\"accordion-block_d4fecf3eda2d88e11574ad0c996369d2\" class=\"custom-block accordion-block alignfull has-light-grey-background-color theme-leaves-green spacing-top-full spacing-bottom-full width-full\" data-emergence=\"hidden\">\n    \n    <div class=\"container\">\n                    <div class=\"content-container\">\n                                    <h3 style=\"text-align: center;\">5 ways fostering benefits your own children</h3>\n<p style=\"text-align: center;\">Here are just a handful of the benefits that fostering can have on your own children, highlighting the wider impact of foster care on child development for every young person in your home.</p>\n                            </div>\n        \n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Learning how to empathise </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>Empathy is an important life skill that helps children form friendships, resolve conflicts and see things from different perspectives.</p>\n<p>When your children grow up with foster siblings who haven’t had the best start to life, they learn that not everyone sees or experiences the world in the same way.</p>\n<p>Through their foster siblings, they&#8217;ll learn that some children carry the weight of difficult early life experiences, impacting the way they respond to the world around them.</p>\n<p>By being there for their foster siblings, your children can develop empathy, compassion and understanding, which will enrich both their lives and the lives of others now and in the future.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Understanding different backgrounds </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>When you foster, your children have the chance to form bonds with children from different backgrounds and walks of life. This gives them a broader view of the world and helps them become more accepting and understanding of others.</p>\n<p>This is especially true if you foster a child who doesn&#8217;t share the same faith or culture as your family. As you nurture and celebrate this part of your foster child&#8217;s identity, your children will learn about it too.</p>\n<p>In doing so, they&#8217;ll grow to be more welcoming and open-minded, and will have the opportunity to build friendships with a wide range of people throughout their lives.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Building lifelong connections </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>As your children grow, friendships will come and go. However, when you foster a child, your children have a unique opportunity to build a sibling-like bond with someone from another family.</p>\n<p>Living together, going on holidays, celebrating birthdays, Christmases, achievements, and more – these shared experiences connect them in a way that ordinary friendships often can&#8217;t. This means the connections your children build with the children you foster are more likely to stand the test of time and become something very special.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Developing resilience  </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>Welcoming a child into your home is a big change, especially for your children, who&#8217;ll have become accustomed to a particular routine and having you all to themselves.</p>\n<p>However, this can be beneficial for your children because they&#8217;ll have to adapt to sharing you, their home and their life with another child. This can teach them patience and problem-solving skills that&#8217;ll help them build resilience, making them more adaptable to stress and change in the future.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Working as a team </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>Fostering is a family affair, and having a shared purpose can strengthen family relationships.</p>\n<p>Each <a class=\"Hyperlink SCXW19826155 BCX0\" href=\"https://www.orangegrovefostercare.co.uk/foster-family/\" target=\"_blank\" rel=\"noreferrer noopener\"><span class=\"TextRun Underlined SCXW19826155 BCX0\" lang=\"EN-GB\" xml:lang=\"EN-GB\" data-contrast=\"none\"><span class=\"NormalTextRun SCXW19826155 BCX0\" data-ccp-charstyle=\"Hyperlink\">foster </span><span class=\"NormalTextRun SCXW19826155 BCX0\" data-ccp-charstyle=\"Hyperlink\">family</span></span></a> member plays an important role. For example, when you first welcome a child into your home, your children can help them settle in, make friends, and explore the community.</p>\n<p>Together, you&#8217;ll work as a team, lean on each other through difficulties, and celebrate the joy of making a difference together.</p>\n<p>And when it&#8217;s time for your children to leave home, they&#8217;ll have gained valuable transferable skills that will help them in their education, at work, and in relationships.</p>\n<p><em>“My favourite thing about fostering is seeing my foster sister grow. I’m the youngest child, and I always wanted a younger sibling growing up. Watching a little baby who could not even roll over, to seeing a toddler walk around freely, makes me so happy. These are life skills that we&#8217;ve taught her – something she will need for the rest of her life.”</em> Caitlin, 17, shares her experience of fostering with her family.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n                        <div class=\"accordion-item\">\n                    <div class=\"title\">\n                        <p>Challenges your children could face </p>\n                    </div>\n                    <div class=\"content-wrapper\">\n                        <div class=\"content\">\n                            <p>Although fostering can be incredibly beneficial for your own children, there are some aspects they might also find challenging. Below, we look at these in more detail, offering some tips on how you can support your children with each one.</p>\n\n                                                    </div>\n                    </div>\n                </div>\n            </div>\n</div>\n\n<div id=\"content-block-block_4db4536be6a4a148fe3c67db6cb187bd\" class=\"custom-block content-block alignfull has-dark-green-background-color has-dark-background theme-leaves-white spacing-top-full spacing-bottom-full width-full\" data-columns=\"1\">\n    <div class=\"container\">\n\n                    <div class=\"content\">\n                <h3 aria-level=\"3\"><span data-contrast=\"none\">Sharing their world with another child</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></h3>\n<p><span data-contrast=\"auto\">Sharing a toy, a bag of sweets, or craft supplies with a friend is one thing, but sharing your home, parents and family experiences with a child from another family is quite another. This might be challenging for your own children when you welcome a foster child into your home. </span><span data-ccp-props=\"{}\"> </span></p>\n<p><span data-contrast=\"auto\">Children in care are often living with the trauma of their past experiences, which means they may sometimes need more of your time and attention as you help them heal. Whether it’s managing big emotions, supporting their education or helping them navigate time with their birth family, it&#8217;s only natural that your own children might find this difficult at first.</span><span data-ccp-props=\"{}\"> </span></p>\n<p aria-level=\"4\"><span data-contrast=\"none\">How you can help</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:80,&quot;335559739&quot;:40}\"> </span></p>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"20\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Orange Grove resources:</span></b><span data-contrast=\"auto\"> Prepare your children for fostering by downloading our guide for children who foster. This will help them understand what fostering is and what it means for them, so they&#8217;ll know what to expect. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"20\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"2\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Dedicate time to your children:</span></b><span data-contrast=\"auto\"> Set aside quality time with your own children. Whether it’s a daily catch-up before bedtime or a walk in the park after school, this can help reassure them that they still have your time and attention. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"20\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"3\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Offer reassurance</span></b><span data-contrast=\"auto\">: If your children are worried about sharing you with another child, remind them that your love for them will never change, and they can talk to you about anything at any time.  </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"20\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:1080,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"4\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Teach them about trauma:</span></b><span data-contrast=\"auto\"> Your children may find it easier to share you, their home and their daily lives with another child if they understand that child&#8217;s experiences, the impact it can have on their well-being and how you can help them as a family. Our </span><a href=\"https://www.orangegrovefostercare.co.uk/about-us/training/\"><span data-contrast=\"none\">training for foster parents</span></a><span data-contrast=\"auto\"> can help you with this because it covers trauma and its effect on a child&#8217;s behaviour, relationships, and overall well-being. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<h3 aria-level=\"3\"><span data-contrast=\"none\">Not always getting along</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></h3>\n<p aria-level=\"3\"><span data-contrast=\"auto\">When you live with someone, you see them in a way the rest of the world doesn&#8217;t. In their safe space, where they can be themselves and put down the mask they might wear for everyone else. </span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></p>\n<p aria-level=\"3\"><span data-contrast=\"auto\">As a result, at the end of a long day or during a stressful period at school, such as exam season, both your own children and the children you foster may vent their frustrations when they get home. </span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></p>\n<p aria-level=\"3\"><span data-contrast=\"auto\">If the child in your care also struggles to relate to their peers, trust adults, or regulate their emotions due to their past experiences, this could lead to conflict between foster siblings. </span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></p>\n<p aria-level=\"4\"><span data-contrast=\"none\">How you can help </span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:80,&quot;335559739&quot;:40}\"> </span></p>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"27\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Help them bond:</span></b><span data-contrast=\"auto\"> You can&#8217;t force your children to bond with children you foster. However, you can gently encourage it by creating opportunities for them to get to know each other, such as organising days out, games nights, and other family activities where you can relax and have fun together. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"27\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"2\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Teach self-care:</span></b><span data-contrast=\"auto\"> If your children or the children you foster are feeling stressed, understanding the importance of self-care can help prevent them from taking their frustrations out on each other. You could suggest gentle exercise, journaling or getting enough sleep; these small things could make it easier for them to manage their emotions. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"27\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"3\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Lean on our support:</span></b><span data-contrast=\"auto\"> At Orange Grove, we&#8217;re here for every member of your family. Our family support workers can provide advice, guidance or just a listening ear for your children. They can also organise get-togethers with other children from similar family set-ups, giving them a safe space to share their experiences and vent their frustrations. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<h3 aria-level=\"3\"><span data-contrast=\"none\">Being a role model </span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></h3>\n<p><span data-contrast=\"auto\">During the first few weeks of fostering, your children may be excited about having a foster sibling – someone they can make friends with, mentor, and teach new things to. </span><span data-ccp-props=\"{}\"> </span></p>\n<p><span data-contrast=\"auto\">However, when the excitement wears off, they may feel pressure to be the &#8216;perfect&#8217; role model. Over time, they might start to hide their own emotions, withdraw, or even resent their foster sibling because they feel like they can&#8217;t share how they really feel.</span><span data-ccp-props=\"{}\"> </span></p>\n<p aria-level=\"4\"><span data-contrast=\"none\">How you can help</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:80,&quot;335559739&quot;:40}\"> </span></p>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"29\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Language matters: </span></b><span data-contrast=\"auto\">Try to avoid using language that could unintentionally put pressure on your child to be &#8216;perfect&#8217;. For example, if they display big emotions about something, they might internalise phrases like &#8216;you know better&#8217; as a message that they always have to be &#8216;good&#8217;. Instead, talk to them to understand how they&#8217;re really feeling, and make sure they know the door is always open if they want a chat. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"29\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"2\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Provide an outlet: </span></b><span data-contrast=\"auto\">Encourage your children to spend time with their friends and take part in activities they enjoy. This gives them a break from being an older sibling or role model and a chance to just be themselves. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<h3 aria-level=\"3\"><span data-contrast=\"none\">Adjustments to their routine</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></h3>\n<p><span data-contrast=\"auto\">Every family has a routine which may include daily tasks before and after school, fun activities, and time to relax and unwind. However, when you foster, your routine will change to adapt to the needs of the child in your care. You&#8217;ll also need to make time for training, support groups, and regular supervision. </span><span data-ccp-props=\"{}\"> </span></p>\n<p><span data-contrast=\"auto\">Your children may initially struggle to adjust to this new routine, especially if they&#8217;ve had the same one since they can remember.</span><span data-ccp-props=\"{}\"> </span></p>\n<p aria-level=\"4\"><span data-contrast=\"none\">How you can help</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:80,&quot;335559739&quot;:40}\"> </span></p>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"32\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Keep some things the same</span></b><span data-contrast=\"auto\">: Changing your child&#8217;s entire routine can trigger stress and anxiety, so try to maintain some familiar parts of their day. For example, continuing bedtime stories, the same mealtimes, and chatting about your day over dinner can help your child feel secure even if other parts of their routine have changed. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"32\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"2\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Include your children:</span></b><span data-contrast=\"auto\"> You and your children are on your fostering journey together, so involve them as much as possible. For instance, if you&#8217;re driving your foster child to a family time meeting, you could take your child along and spend time with them while your foster child sees their family. This way, your child will still feel involved and will have something to look forward to on those days. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<h3 aria-level=\"3\"><span data-contrast=\"none\">Saying goodbye</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}\"> </span></h3>\n<p><span data-contrast=\"auto\">Regardless of the type of fostering you choose &#8211; long-term, short-term, or emergency &#8211; at some point, your foster child will leave your care. </span><span data-ccp-props=\"{}\"> </span></p>\n<p><span data-contrast=\"auto\">Whether through reunification, moving to a permanent placement, or ageing out of care, saying goodbye to a child who has become a member of your family can be incredibly hard for both you and your children.</span><span data-ccp-props=\"{}\"> </span></p>\n<p aria-level=\"4\"><span data-contrast=\"none\">How you can help</span><span data-ccp-props=\"{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:80,&quot;335559739&quot;:40}\"> </span></p>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"34\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"1\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Keep them in the loop: </span></b><span data-contrast=\"auto\">Make sure your child understands the plan for your foster child&#8217;s care. This will help them mentally and emotionally prepare for their departure.  </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"34\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"2\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Create a memory book together: </span></b><span data-contrast=\"auto\">Spend time creating a photo book or scrapbook of special moments shared between your children and the children you foster. This will give them both a meaningful keepsake of their journey together. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<ul>\n<li aria-setsize=\"-1\" data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"34\" data-list-defn-props=\"{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}\" data-aria-posinset=\"3\" data-aria-level=\"1\"><b><span data-contrast=\"auto\">Organise some family time: </span></b><span data-contrast=\"auto\">If your foster child is moving on from your care, you could organise a family meal or special day out to celebrate the time you&#8217;ve shared. Not only will this help your children process their foster sibling&#8217;s departure, but it will also create lasting memories and show your foster child just how much they mean to your family. </span><span data-ccp-props=\"{}\"> </span></li>\n</ul>\n<p><span data-ccp-props=\"{}\"> </span></p>\n<p><i><span data-contrast=\"auto\">“When my parents told me they were thinking about fostering, I was not happy. I didn’t like the idea of having someone else in my house. But now, I look back and realise that fostering is potentially one of the best things my parents have done.</span></i><span data-ccp-props=\"{}\"> </span></p>\n<p><i><span data-contrast=\"auto\">Although I was unsure at first, now I understand that fostering – no matter whether short or long term – can have a really positive impact on a child and is the stepping stone they need to live the best life they can.” </span></i><span data-contrast=\"auto\">Caitlin, 17, who fosters with her family. Read her fostering story </span><a href=\"https://www.orangegrovefostercare.co.uk/resources/fostering-stories/becoming-a-foster-sister-caitlins-story/\"><span data-contrast=\"none\">here</span></a><span data-contrast=\"auto\">. </span><span data-ccp-props=\"{}\"> </span></p>\n\n                            </div>\n        \n            </div>\n</div>\n\n\n<div id=\"image-text-block_916e56ccec58c74beb5cea3e40463fbf\" class=\"custom-block image-text-block alignfull image-left mobile-image-first has-none-background-color theme-none spacing-top-full spacing-bottom-full width-full\" data-emergence=\"hidden\">\n    <div class=\"container\">\n        <div class=\"content\">\n            <h4 aria-level=\"3\"><span class=\"text-medium\">Join our community today! </span></h4>\n<p><span data-contrast=\"auto\">At Orange Grove, we’re here to support your whole family on your fostering journey. From regular support groups, events, and activities to high-quality training and expert input from fostering specialists, when you join us, you become part of a diverse community, all working towards the same goal – changing children’s lives. </span><span data-ccp-props=\"{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559685&quot;:0,&quot;335559737&quot;:0,&quot;335559738&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}\"> </span></p>\n<p><span data-contrast=\"auto\">So, if you’re thinking about </span><a href=\"https://www.orangegrovefostercare.co.uk/about-fostering/how-to-become-a-foster-parent/\"><span data-contrast=\"none\">becoming a foster parent</span></a><span data-contrast=\"auto\"> and want to learn more about </span><a href=\"https://www.orangegrovefostercare.co.uk/foster-family/fostering-with-birth-children/\"><span data-contrast=\"none\">fostering with children</span></a><span data-contrast=\"auto\">, please get in touch. Call us on 0800 369 8513 or submit an online enquiry form, and a member of our friendly team will be in touch.  </span><span data-ccp-props=\"{}\"> </span></p>\n                    </div>\n\n                    <div class=\"media\">\n                <div class=\"img-wrapper\"><img loading=\"lazy\" decoding=\"async\" width=\"625\" height=\"417\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-625x417.jpg\" class=\"attachment-half-width-desktop size-half-width-desktop\" alt=\"fostering benefits your own children\" srcset=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-625x417.jpg 625w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-365x243.jpg 365w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-875x584.jpg 875w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-176x117.jpg 176w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-768x512.jpg 768w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children-952x635.jpg 952w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children.jpg 1000w\" sizes=\"(max-width: 625px) 100vw, 625px\" /></div>\n            </div>\n            </div>\n</div>\n\n\n<div id=\"articles-block-block_ad3d940faaf4cb4af562b40f5af76fe9\" class=\"custom-block articles-block alignfull theme-none spacing-top-full spacing-bottom-full has-dark-orange-background-color has-dark-background\">\n    <div class=\"container\">\n        <div class=\"text-controls\">\n                        <div class=\"controls\">\n                                <div class=\"swiper-options\">\n                    <div class=\"swiper-buttons\">\n                        <div class=\"swiper-button-prev\"></div>\n                        <div class=\"swiper-button-next\"></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n                    <div class=\"swiper-container\">\n\n                <div class=\"swiper-wrapper\">\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-548\" class=\"post-548 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/change-a-childs-life/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/05/new-years-resolution-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"\" srcset=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/05/new-years-resolution-397x298.jpg 397w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/05/new-years-resolution-365x274.jpg 365w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/05/new-years-resolution-176x132.jpg 176w, https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/05/new-years-resolution.jpg 540w\" sizes=\"(max-width: 397px) 100vw, 397px\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">January 8 2026</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>The New Year&#8217;s Resolution That Will Change a Child’s Life</h3>\n                                        <p>Before you choose a New Year&#8217;s Resolution like finding a new hobby or improving your health, why not consider making a New Year’s Resolution that will help others and change lives?</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-3462\" class=\"post-3462 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs tag-boundaries tag-fostering-journey tag-tips\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/setting-boundaries-in-foster-care/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/12/Helping-Children-Thrive-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"setting boundaries for foster child\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">December 5 2025</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>Setting Boundaries: Helping Children Thrive in Your Foster Home</h3>\n                                        <p>Boundaries help foster children feel secure, respected, and part of a stable home. In this blog, we explore why boundaries matter in foster care, the benefits they bring, and how to set clear, supportive expectations that help your foster family grow stronger together.</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-3324\" class=\"post-3324 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs tag-birth-family tag-grandparent tag-new-to-fostering tag-tips\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/fostering-and-grandparent-relationships/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/Fostering-Impact-Grandparents-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"grandparent\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">November 27 2025</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>How Does Fostering Impact Grandparents’ Relationships with Grandchildren?</h3>\n                                        <p>If you&#8217;re a grandparent considering fostering, you might wonder how it will affect your bond with your grandchildren. In this blog, we explore the challenges and opportunities fostering can bring—along with tips on maintaining strong family connections and creating a positive, inclusive environment for everyone involved.</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-3216\" class=\"post-3216 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs tag-burnt-out tag-mental-health tag-overwhelmed tag-tips\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/foster-parent-overwhelm-tips/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/09/foster-parent-overwhelm-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"overwhelm\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">October 1 2025</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>5 Tips to Remember When Feeling Overwhelmed as a Foster Parent</h3>\n                                        <p>No matter how experienced you are, fostering can feel overwhelming at times. In this blog, we explore common causes of overwhelm for foster parents, how to recognise the signs, and five supportive, practical tips to help you manage stress and get back to feeling more balanced and in control.</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-3167\" class=\"post-3167 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs tag-additional-needs tag-faqs tag-new-to-fostering tag-tips\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/fostering-with-child-additional-needs/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/09/foster-a-child-with-additional-needs-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"Fostering Additional Needs\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">September 10 2025</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>Fostering When Your Own Child Has Additional Needs</h3>\n                                        <p>If your child has additional needs, you might wonder how fostering will affect your family. This blog explores the key things to consider before fostering, how your child’s needs may influence your decision, and how fostering can still be a positive, rewarding experience for everyone involved—with the right support.</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                                            <div class=\"swiper-slide\">\n                            <article id=\"post-3067\" class=\"post-3067 post type-post status-publish format-standard has-post-thumbnail hentry category-blogs tag-faqs tag-guide tag-new-to-fostering tag-types-of-fostering\">\n                                <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/ultimate-guide-to-fostering/\">\n                                    <div class=\"post-image\">\n                                                                                    <img loading=\"lazy\" decoding=\"async\" width=\"397\" height=\"298\" src=\"https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/08/What-is-fostering-397x298.jpg\" class=\"attachment-page-card-3-col size-page-card-3-col wp-post-image\" alt=\"\" />                                                                                <div class=\"entry-meta\">\n                                            <span class=\"published-date\">August 27 2025</span>\n                                        </div>\n                                    </div>\n                                    <div class=\"post-content\">\n                                        <h3>The Ultimate Guide to Fostering</h3>\n                                        <p>New to fostering and unsure where to start? Our Ultimate Guide to Fostering brings everything together in one place &#8211; covering the types of care, who can foster, what the process involves, and what support and allowances you’ll receive. It’s the perfect starting point for anyone considering a future in foster care.</p>\n\n                                    </div>\n                                    <div class=\"post-link\">\n                                        <span class=\"custom-text-link\"><span>Find Out More</span></span>\n                                    </div>\n                                </a>\n                            </article>\n                        </div>\n                    \n\n                                </div>\n\n            </div>\n    </div>\n</div>\n<script>\n    // Articles Slideshow\n    document.addEventListener(\"DOMContentLoaded\", (event) => {\n        var block_ad3d940faaf4cb4af562b40f5af76fe9_swiper = new Swiper('#articles-block-block_ad3d940faaf4cb4af562b40f5af76fe9 .swiper-container', {\n            loop: true,\n            slidesPerView: 1,\n            spaceBetween: 30,\n            lazy: true,\n            navigation: {\n                nextEl: '#articles-block-block_ad3d940faaf4cb4af562b40f5af76fe9 .swiper-button-next',\n                prevEl: '#articles-block-block_ad3d940faaf4cb4af562b40f5af76fe9 .swiper-button-prev'\n            },\n\n            breakpoints: {\n                992: {\n                    slidesPerView: 3,\n                }\n            }\n        });\n    });\n</script><p>The post <a href=\"https://www.orangegrovefostercare.co.uk/resources/blogs/impact-of-fostering-on-your-own-children/\">The Impact of Fostering on Your Own Children: What to Expect</a> appeared first on <a href=\"https://www.orangegrovefostercare.co.uk\">Orange Grove Foster Care</a>.</p>",
       "images": [
         "https://www.orangegrovefostercare.co.uk/wp-content/uploads/2025/10/fostering-benefits-your-own-children.jpg"
+      ]
+    },
+    {
+      "id": "competitor7-news:3283e12b",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "RAF Veteran takes young people under wing",
+      "link": "https://www.fosteringinsomerset.org.uk/news/307.htm",
+      "isoDate": "2025-11-01T00:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2f0nxcg5rz638840346789949272.png&amp;MaxWidth=700&amp;MaxHeight=700"
+      ]
+    },
+    {
+      "id": "competitor7-news:73a5014c",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "How Stepping Stones Carers are supporting care leavers",
+      "link": "https://www.fosteringinsomerset.org.uk/news/how-stepping-stones-carers-are-supporting-care-leavers.htm",
+      "isoDate": "2025-11-01T00:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fegyaaziz638344280357506510.JPG&amp;MaxWidth=700&amp;MaxHeight=700"
       ]
     },
     {
@@ -1281,6 +1181,23 @@
       ]
     },
     {
+      "id": "competitor7-news:434d5759",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "National Parenting Week: Helping families stay together",
+      "link": "https://www.fosteringinsomerset.org.uk/news/national-parenting-week-helping-families-stay-together.htm",
+      "isoDate": "2025-10-12T23:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2ffou35ljf638327978213193625.jpg&amp;MaxWidth=700&amp;MaxHeight=700"
+      ]
+    },
+    {
       "id": "competitor5-news:ac1b4f4a",
       "sourceId": "competitor5-news",
       "sourceTitle": "Capstone News & Blogs",
@@ -1312,6 +1229,40 @@
       "content": "<p>Children of Foster Carers’ Week is an annual campaign organised by <a href=\"https://www.thefosteringnetwork.org.uk/about-fostering/for-fostering-services/recruitment-and-retention/children-of-foster-carers-month/\">The Fostering Network</a>, taking place from 13th to 19th October 2025. The week was created to recognise and celebrate the incredible role that the children of foster carers play within a fostering household.</p>\n\n\n\n<p>Whether a foster carer’s child is young, a teenager, or has grown up and moved out of the family home, the children of foster carers often provide support to both their parents and the foster child or young person. Some responsibilities they have can include:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Being a positive role model for the child or young person</li>\n\n\n\n<li>Supporting with everyday tasks, such as school pick-ups or cooking</li>\n\n\n\n<li>Sharing personal things like toys, books, or games</li>\n\n\n\n<li>Helping them learn about responsibilities within the home</li>\n\n\n\n<li>Offering a listening ear and someone they can talk to</li>\n</ul>\n\n\n\n<p>Throughout the week, we will be sharing case studies from children of foster carers to highlight their experiences and the vital role they play in the fostering household. These stories highlight how fostering has impacted their life and the amazing memories they have had watching foster children and young people develop over their time together.</p>\n\n\n\n<p>To kick start Children of Foster Carers week, we spoke to Lockie and Pippa, who shared what their favourite memory with a foster child or young person has been so far, what they enjoy most about being part of a fostering household, how their responsibilities may have changed over time, and any additional thoughts they wanted to share.</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n\n\n\n<h2 class=\"wp-block-heading\">Lockie – Aged 9</h2>\n\n\n\n<p><strong>What has been your most memorable or special experience with a foster child?</strong></p>\n\n\n\n<p><em>“When we all went to Disneyland at Christmas. It was good having L to go on all the rides with, especially the bigger ones, because my sisters don’t like them. We like the Spider-Man ride the most, shooting webs with our hands and wearing the 3D glasses.”</em></p>\n\n\n\n<p><strong>What do you enjoy most about having a foster child in your home?</strong></p>\n\n\n\n<p><em>“L plays football with me in the garden and plays Roblox with me on the Xbox. He’s getting better at playing with me, and it’s good having a boy to play outside with at football.”</em></p>\n\n\n\n<p><strong><em>Have your responsibilities at home changed since your family began fostering? If so, how?</em></strong></p>\n\n\n\n<p><em>“I help him and remind him how to be good, especially because my little sister copies, and we need to teach her to be kind.”</em></p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n\n\n\n<h2 class=\"wp-block-heading\">Pippa – Aged 15</h2>\n\n\n\n<p><strong>What has been your most memorable or special experience with a foster child?</strong></p>\n\n\n\n<p>“I have had lots of lovely memories of past and present little ones, building special bonds that last a lifetime, Christmases full of excitement and magic.</p>\n\n\n\n<p>“Times when I come home from school to be greeted with 2 little ones chanting my name as I walk through the door, both wanting big hugs.”</p>\n\n\n\n<p><strong>What do you enjoy most about having a foster child in your home?</strong></p>\n\n\n\n<p><em>“Fun and laughter everywhere, to stay with me forever.”</em></p>\n\n\n\n<p><strong><em>Have your responsibilities at home changed since your family began fostering? If so, how?</em></strong></p>\n\n\n\n<p><em>“They have stayed the same even though things have changed. I enjoy playing with toys and reading stories.”</em></p>\n\n\n\n<p><strong>Is there anything else you would like to share about your experiences?</strong></p>\n\n\n\n<p><em>“I have found it to be really positive having my parents be able to foster, even though it does have its sad times, like when they move on to adoption.”</em></p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n\n\n\n<p></p>\n\n\n\n<p>To view more case studies from Children of Foster Carers, take a look at our <a href=\"https://www.swiisfostercare.com/info-hub/\">Info Hub</a>.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Thinking about becoming a foster carer?</strong></h2>\n\n\n\n<p>If you are interested in learning more about becoming a foster carer,&nbsp;<a href=\"https://www.swiisfostercare.com/contact/\">get in touch with our recruitment team,</a>&nbsp;who can answer any questions you have about fostering and provide you with information on the excellent&nbsp;<a href=\"https://www.swiisfostercare.com/fostering/support/\">support</a>,&nbsp;<a href=\"https://www.swiisfostercare.com/fostering/training/\">training</a>&nbsp;and&nbsp;<a href=\"https://www.swiisfostercare.com/fostering/fostering-allowance-pay/\">allowance</a>&nbsp;Swiis offers.</p>\n<p>The post <a href=\"https://www.swiisfostercare.com/children-of-foster-carers-week/\">Children of Foster Carers’ Week</a> appeared first on <a href=\"https://www.swiisfostercare.com\">Swiis Foster Care</a>.</p>",
       "images": [
         "https://www.swiisfostercare.com/wp-content/uploads/2025/10/Children-of-Foster-Carers-Week.jpg"
+      ]
+    },
+    {
+      "id": "competitor7-news:60d6c33b",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Urgent call for more foster carers in Somerset",
+      "link": "https://www.fosteringinsomerset.org.uk/news/urgent-call-for-more-foster-carers-in-somerset.htm",
+      "isoDate": "2025-10-06T23:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fiysxqr0b638639000661925856.jpg&amp;MaxWidth=700&amp;MaxHeight=700"
+      ]
+    },
+    {
+      "id": "competitor7-news:2a45a6e9",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Foster Homes To Forever Homes",
+      "link": "https://www.fosteringinsomerset.org.uk/news/foster-homes-to-forever-homes.htm",
+      "isoDate": "2025-10-03T23:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fed1cq4gp638320221021580595.jpg&amp;MaxWidth=700&amp;MaxHeight=700"
       ]
     },
     {
@@ -1604,6 +1555,21 @@
       ]
     },
     {
+      "id": "competitor7-news:f939571e",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Get set, foster!",
+      "link": "https://www.fosteringinsomerset.org.uk/news/get-set-foster.htm",
+      "isoDate": "2025-08-26T23:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": []
+    },
+    {
       "id": "competitor5-news:e206b74b",
       "sourceId": "competitor5-news",
       "sourceTitle": "Capstone News & Blogs",
@@ -1808,6 +1774,23 @@
       ]
     },
     {
+      "id": "competitor7-news:d98860cc",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Foster couple highlight urgent need for homes this Foster Care Fortnight",
+      "link": "https://www.fosteringinsomerset.org.uk/news/foster-couple-highlight-urgent-need-for-homes-this-foster-care-fortnight.htm",
+      "isoDate": "2025-05-13T23:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fx4z211f5638840340761050127.jpg&amp;MaxWidth=700&amp;MaxHeight=700"
+      ]
+    },
+    {
       "id": "competitor8-blogs:24f51ced",
       "sourceId": "competitor8-blogs",
       "sourceTitle": "Orange Grove Blogs",
@@ -1839,6 +1822,23 @@
       "content": "",
       "images": [
         "https://www.capstonefostercare.co.uk/api/file/3014-20250416103126.png?width=600&height=400&fill=1"
+      ]
+    },
+    {
+      "id": "competitor7-news:55caa99b",
+      "sourceId": "competitor7-news",
+      "sourceTitle": "Fostering Somerset News",
+      "company": "Fostering Somerset",
+      "companyGroup": "competitor",
+      "type": "website",
+      "pageUrl": "https://www.fosteringinsomerset.org.uk/news",
+      "title": "Urgent need for Somerset residents to support local children in care",
+      "link": "https://www.fosteringinsomerset.org.uk/news/urgent-need-for-somerset-residents-to-support-local-children-in-care.htm",
+      "isoDate": "2025-02-01T00:00:00.000Z",
+      "snippet": "",
+      "content": "",
+      "images": [
+        "https://www.fosteringinsomerset.org.uk/SiteAssetImage?Url=%2fNewsArticles%2fgghmg5in638423960256803166.png&amp;MaxWidth=700&amp;MaxHeight=700"
       ]
     },
     {

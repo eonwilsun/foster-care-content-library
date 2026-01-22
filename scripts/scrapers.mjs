@@ -137,31 +137,34 @@ async function scrapeFosteringSomerset() {
     
     let match;
     const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth(); // 0-11
     
     while ((match = articleRegex.exec(html)) !== null && articles.length < 10) {
       const [, link, imageStyle, day, month, title] = match;
       
-      // Parse date from day/month
+      // Parse date from day/month - assume year is current or previous year
+      // If the date would be in the future, it's from last year
       let pubDate = new Date().toISOString();
       try {
-        pubDate = new Date(`${month} ${day}, ${currentYear}`).toISOString();
+        const monthIndex = new Date(`${month} 1, 2000`).getMonth();
+        let year = currentYear;
+        
+        // If this month/day combo is in the future, it must be from last year or earlier
+        const testDate = new Date(year, monthIndex, parseInt(day));
+        if (testDate > new Date()) {
+          year = currentYear - 1;
+        }
+        
+        pubDate = new Date(`${month} ${day}, ${year}`).toISOString();
       } catch (e) {
         // Use current date if parsing fails
       }
       
-      // Extract image URL from background-image style
+      // Extract image URL - Somerset uses /SiteAssetImage proxy, keep that format
       let imageUrl = null;
-      // The full URL structure is: /SiteAssetImage?Url=ENCODED_PATH.ext&amp;MaxWidth=...
-      // Match Url= followed by anything until we hit &amp; (but allow &#x for HTML entities)
-      const urlParamMatch = imageStyle.match(/Url=((?:[^&]|&#)+?\.\w+)&amp;/);
-      if (urlParamMatch) {
-        const encodedPath = urlParamMatch[1];
-        // Replace HTML entities before decoding: &#x2B; is +, &#x2C; is comma
-        const cleanedPath = encodedPath
-          .replace(/&#x2B;/gi, '+')
-          .replace(/&#x2C;/gi, ',');
-        const decodedPath = decodeURIComponent(cleanedPath);
-        imageUrl = `https://www.fosteringinsomerset.org.uk${decodedPath}`;
+      // imageStyle already contains the URL from the url() capture
+      if (imageStyle && imageStyle.startsWith('/SiteAssetImage')) {
+        imageUrl = `https://www.fosteringinsomerset.org.uk${imageStyle}`;
       }
       
       articles.push({
