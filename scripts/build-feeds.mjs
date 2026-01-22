@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Parser from 'rss-parser';
+import { scrapers } from './scrapers.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -117,6 +118,66 @@ async function loadSources() {
 }
 
 async function fetchSourceItems(source) {
+  // Check if we have a custom scraper for this source
+  if (!source.rssUrl && scrapers[source.id]) {
+    try {
+      console.log(`  Using custom scraper for ${source.id}...`);
+      const scrapedArticles = await scrapers[source.id]();
+      
+      const items = await Promise.all(scrapedArticles.map(async (article) => {
+        const isoDate = toIsoDate(article.pubDate);
+        const title = normalizeText(article.title || '(untitled)');
+        const link = String(article.link || '').trim();
+        const snippet = normalizeText(article.contentSnippet || '');
+        
+        // Get featured image from scraper or fetch from article page
+        let finalImages = [];
+        
+        if (article.image) {
+          finalImages = [article.image];
+        } else if (link) {
+          const featuredImage = await fetchFeaturedImage(link);
+          if (featuredImage) {
+            finalImages = [featuredImage];
+          }
+        }
+        
+        const normalizedItem = {
+          sourceId: source.id,
+          sourceTitle: source.title,
+          company: source.company,
+          companyGroup: source.companyGroup,
+          type: source.type,
+          pageUrl: source.pageUrl,
+          title,
+          link,
+          isoDate,
+          snippet,
+          content: '',
+          images: finalImages.slice(0, 10)
+        };
+        
+        return {
+          id: stableId({
+            sourceId: source.id,
+            link,
+            isoDate,
+            title
+          }),
+          ...normalizedItem
+        };
+      }));
+      
+      console.log(`  ✓ Scraped ${items.length} articles`);
+      return { items, warning: null };
+    } catch (err) {
+      return {
+        items: [],
+        warning: `Scraping failed: ${err?.message || String(err)}`
+      };
+    }
+  }
+  
   if (!source.rssUrl) {
     return { items: [], warning: 'No rssUrl configured (link-only source).' };
   }
