@@ -58,7 +58,7 @@ async function load() {
 function filterItems() {
   const q = state.q.trim().toLowerCase();
 
-  return data.items.filter((i) => {
+  const filtered = data.items.filter((i) => {
     if (state.type !== 'all' && i.type !== state.type) return false;
     if (state.companyGroup !== 'all' && i.companyGroup !== state.companyGroup) return false;
     if (state.specificCompany !== 'all' && i.company !== state.specificCompany) return false;
@@ -68,6 +68,15 @@ function filterItems() {
     }
     return true;
   });
+
+  // Sort by date descending (most recent first)
+  filtered.sort((a, b) => {
+    const dateA = new Date(a.isoDate || 0);
+    const dateB = new Date(b.isoDate || 0);
+    return dateB - dateA;
+  });
+
+  return filtered;
 }
 
 function renderItems(items) {

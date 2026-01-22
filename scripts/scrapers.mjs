@@ -151,11 +151,17 @@ async function scrapeFosteringSomerset() {
       
       // Extract image URL from background-image style
       let imageUrl = null;
-      const imageMatch = imageStyle.match(/Url=([^&]+)/);
-      if (imageMatch) {
-        const encodedUrl = imageMatch[1];
-        const decodedUrl = decodeURIComponent(encodedUrl);
-        imageUrl = `https://www.fosteringinsomerset.org.uk${decodedUrl}`;
+      // The full URL structure is: /SiteAssetImage?Url=ENCODED_PATH.ext&amp;MaxWidth=...
+      // Match Url= followed by anything until we hit &amp; (but allow &#x for HTML entities)
+      const urlParamMatch = imageStyle.match(/Url=((?:[^&]|&#)+?\.\w+)&amp;/);
+      if (urlParamMatch) {
+        const encodedPath = urlParamMatch[1];
+        // Replace HTML entities before decoding: &#x2B; is +, &#x2C; is comma
+        const cleanedPath = encodedPath
+          .replace(/&#x2B;/gi, '+')
+          .replace(/&#x2C;/gi, ',');
+        const decodedPath = decodeURIComponent(cleanedPath);
+        imageUrl = `https://www.fosteringinsomerset.org.uk${decodedPath}`;
       }
       
       articles.push({
