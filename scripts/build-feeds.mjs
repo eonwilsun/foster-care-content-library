@@ -240,7 +240,14 @@ async function fetchSourceItems(source) {
           let match;
           while ((match = imgRegex.exec(content)) !== null) {
             if (match[1] && /^https?:\/\//i.test(match[1])) {
-              images.push(match[1]);
+              // Decode HTML entities in the URL
+              const decodedUrl = match[1]
+                .replace(/&amp;/g, '&')
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&quot;/g, '"')
+                .replace(/&#039;/g, "'");
+              images.push(decodedUrl);
             }
           }
         }
