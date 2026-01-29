@@ -183,9 +183,82 @@ async function scrapeFosteringSomerset() {
   }
 }
 
+// Facebook Graph API scrapers
+const FACEBOOK_ACCESS_TOKEN = process.env.FACEBOOK_ACCESS_TOKEN;
+
+async function fetchFacebookPosts(pageId, limit = 10) {
+  if (!FACEBOOK_ACCESS_TOKEN) {
+    console.log('  ⚠ No Facebook access token found. Set FACEBOOK_ACCESS_TOKEN environment variable.');
+    return [];
+  }
+
+  try {
+    const fields = 'id,message,created_time,permalink_url,full_picture,attachments{media,title,description}';
+    const url = `https://graph.facebook.com/v18.0/${pageId}/posts?fields=${fields}&limit=${limit}&access_token=${FACEBOOK_ACCESS_TOKEN}`;
+    
+    const response = await fetch(url);
+    if (!response.ok) {
+      const error = await response.json();
+      console.error(`  ✗ Facebook API Error for ${pageId}:`, error.error?.message || response.statusText);
+      return [];
+    }
+    
+    const data = await response.json();
+    
+    if (!data.data || data.data.length === 0) {
+      return [];
+    }
+    
+    // Transform to our format
+    return data.data.map(post => ({
+      title: extractFacebookTitle(post),
+      link: post.permalink_url,
+      pubDate: new Date(post.created_time).toISOString(),
+      contentSnippet: (post.message || '').substring(0, 300),
+      image: post.full_picture || extractFirstAttachmentImage(post.attachments)
+    }));
+    
+  } catch (error) {
+    console.error(`  ✗ Error fetching Facebook posts for ${pageId}:`, error.message);
+    return [];
+  }
+}
+
+function extractFacebookTitle(post) {
+  if (post.message) {
+    const firstLine = post.message.split('\n')[0];
+    return firstLine.length > 100 ? firstLine.substring(0, 97) + '...' : firstLine;
+  }
+  
+  if (post.attachments?.data?.[0]?.title) {
+    return post.attachments.data[0].title;
+  }
+  
+  return 'Facebook Post';
+}
+
+function extractFirstAttachmentImage(attachments) {
+  if (!attachments?.data?.[0]?.media?.image?.src) {
+    return null;
+  }
+  return attachments.data[0].media.image.src;
+}
+
+// Facebook scrapers for each source
+async function scrapeSwiiseFacebook() {
+  return await fetchFacebookPosts('swiisfostercare', 10);
+}
+
+async function scrapeCompassFacebook() {
+  return await fetchFacebookPosts('compassfostering', 10);
+}
+
 export const scrapers = {
   'competitor1-news': scrapeCompassFosteringNews,
   'competitor1-blogs': scrapeCompassFosteringBlogs,
   'competitor5-news': scrapeCapstoneFosterCare,
-  'competitor7-news': scrapeFosteringSomerset
+  'competitor7-news': scrapeFosteringSomerset,
+  // Facebook scrapers
+  'ours-facebook': scrapeSwiiseFacebook,
+  'competitor1-facebook': scrapeCompassFacebook
 };

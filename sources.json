@@ -10,15 +10,6 @@
       "rssUrl": "https://www.swiisfostercare.com/feed/"
     },
     {
-      "id": "ours-facebook",
-      "company": "Swiis Foster Care",
-      "companyGroup": "Swiis",
-      "type": "facebook",
-      "title": "Swiis Foster Care Facebook",
-      "pageUrl": "https://www.facebook.com/swiisfostercare",
-      "rssUrl": ""
-    },
-    {
       "id": "competitor1-news",
       "company": "Compass Fostering",
       "companyGroup": "competitor",
@@ -43,7 +34,7 @@
       "type": "facebook",
       "title": "Compass Fostering Facebook",
       "pageUrl": "https://www.facebook.com/CompassFostering/",
-      "rssUrl": ""
+      "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vl3N75Ie3ik.rss"
     },
     {
       "id": "competitor2-news",
@@ -54,6 +45,15 @@
       "pageUrl": "https://www.thefca.co.uk/resources/",
       "rssUrl": "https://www.thefca.co.uk/feed/"
     },
+    {
+      "id": "competitor2-facebook",
+      "company": "Foster Care Associates",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "Foster Care Associates Facebook",
+      "pageUrl": "https://www.facebook.com/fcafostering",
+      "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vl3QO2mn2wW.rss"
+    },    
     {
       "id": "competitor3-news",
       "company": "TACT Fostering",
@@ -73,6 +73,15 @@
       "rssUrl": "https://tactfostering.org.uk/blog/feed/"
     },
     {
+      "id": "competitor3-facebook",
+      "company": "TACT Fostering",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "TACT Fostering Facebook",
+      "pageUrl": "https://www.facebook.com/tactfostering",
+      "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vlRk65yE2Og.rss"
+    },      
+    {
       "id": "competitor4-news",
       "company": "National Fostering Group",
       "companyGroup": "competitor",
@@ -82,6 +91,15 @@
       "rssUrl": "https://www.nfa.co.uk/news-and-blog/feed/"
     },
     {
+      "id": "competitor4-facebook",
+      "company": "National Fostering Group",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "National Fostering Group Facebook",
+      "pageUrl": "https://www.facebook.com/NationalFostering",
+      "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vl3HjGxs96w.rss"
+    },    
+    {
       "id": "competitor5-news",
       "company": "Capstone Foster Care",
       "companyGroup": "competitor",
@@ -90,6 +108,15 @@
       "pageUrl": "https://www.capstonefostercare.co.uk/news-and-blogs",
       "rssUrl": ""
     },
+    {
+      "id": "competitor5-facebook",
+      "company": "Capstone Foster Care",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "Capstone Foster Care Facebook",
+      "pageUrl": "https://www.facebook.com/CapstoneFosterCarePage",
+      "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vlRjo2h12xG.rss"
+    },     
     {
       "id": "competitor6-news",
       "company": "Foster Plus",
