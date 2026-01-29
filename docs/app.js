@@ -106,8 +106,33 @@ function renderItems(items) {
     const card = document.createElement('div');
     card.className = 'card';
 
-    // Add image thumbnail if available
-    if (i.images && i.images.length > 0) {
+    // Add video or image thumbnail
+    if (i.video) {
+      // Create video iframe for Facebook videos
+      const videoWrapper = document.createElement('div');
+      videoWrapper.className = 'card__video';
+      videoWrapper.style.position = 'relative';
+      videoWrapper.style.paddingBottom = '177.78%'; // 9:16 aspect ratio for vertical videos
+      videoWrapper.style.height = '0';
+      videoWrapper.style.overflow = 'hidden';
+      
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(i.video)}&width=405&show_text=false`;
+      iframe.style.position = 'absolute';
+      iframe.style.top = '0';
+      iframe.style.left = '0';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+      iframe.setAttribute('scrolling', 'no');
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowFullScreen', 'true');
+      iframe.setAttribute('allow', 'encrypted-media');
+      
+      videoWrapper.appendChild(iframe);
+      card.appendChild(videoWrapper);
+    } else if (i.images && i.images.length > 0) {
+      // Add image thumbnail if no video
       const img = document.createElement('img');
       img.className = 'card__image';
       img.src = i.images[0];

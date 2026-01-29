@@ -199,6 +199,7 @@ async function fetchSourceItems(source) {
       // Always try to fetch featured image from article page first for consistency
       // EXCEPT for Facebook posts - those require login
       let finalImages = [];
+      let videoUrl = null;
       
       if (link && source.type !== 'facebook') {
         const featuredImage = await fetchFeaturedImage(link);
@@ -251,6 +252,27 @@ async function fetchSourceItems(source) {
             }
           }
         }
+        
+        // 5) Extract video URL from Facebook iframe embeds (FetchRSS)
+        if (source.type === 'facebook' && content) {
+          const iframeRegex = /<iframe[^>]+src=["']([^"']+)["']/gi;
+          const iframeMatch = iframeRegex.exec(content);
+          if (iframeMatch && iframeMatch[1]) {
+            // Decode the iframe src URL
+            const decodedIframeUrl = iframeMatch[1]
+              .replace(/&amp;/g, '&')
+              .replace(/&lt;/g, '<')
+              .replace(/&gt;/g, '>')
+              .replace(/&quot;/g, '"')
+              .replace(/&#039;/g, "'");
+            
+            // Extract the actual Facebook video URL from the iframe
+            const videoMatch = decodedIframeUrl.match(/href=([^&]+)/);
+            if (videoMatch && videoMatch[1]) {
+              videoUrl = decodeURIComponent(videoMatch[1]);
+            }
+          }
+        }
 
         // Remove duplicates - for Facebook, keep all images; for others skip first if multiple (often logos)
         const uniqueImages = [...new Set(images)];
@@ -273,7 +295,8 @@ async function fetchSourceItems(source) {
         isoDate,
         snippet,
         content,
-        images: finalImages.slice(0, 10)
+        images: finalImages.slice(0, 10),
+        video: videoUrl
       };
 
       return {
