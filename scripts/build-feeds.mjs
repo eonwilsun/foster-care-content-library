@@ -197,16 +197,17 @@ async function fetchSourceItems(source) {
       const content = String(item.contentEncoded || item.content || item.description || '').trim();
 
       // Always try to fetch featured image from article page first for consistency
+      // EXCEPT for Facebook posts - those require login
       let finalImages = [];
       
-      if (link) {
+      if (link && source.type !== 'facebook') {
         const featuredImage = await fetchFeaturedImage(link);
         if (featuredImage) {
           finalImages = [featuredImage];
         }
       }
       
-      // If no featured image found, fall back to extracting from RSS feed
+      // If no featured image found (or Facebook type), extract from RSS feed content
       if (finalImages.length === 0) {
         const images = [];
         
@@ -233,7 +234,7 @@ async function fetchSourceItems(source) {
           images.push(item.itunes.image);
         }
         
-        // 4) Parse <img> from content/description HTML (WordPress and most blogs)
+        // 4) Parse <img> from content/description HTML (WordPress and most blogs, FetchRSS Facebook feeds)
         if (content) {
           const imgRegex = /<img[^>]+src=["']([^"']+)["']/gi;
           let match;
@@ -244,9 +245,13 @@ async function fetchSourceItems(source) {
           }
         }
 
-        // Remove duplicates and skip first image if multiple (often logos)
+        // Remove duplicates - for Facebook, keep all images; for others skip first if multiple (often logos)
         const uniqueImages = [...new Set(images)];
-        finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
+        if (source.type === 'facebook') {
+          finalImages = uniqueImages.slice(0, 3); // Take first 3 images from Facebook posts
+        } else {
+          finalImages = uniqueImages.length > 1 ? uniqueImages.slice(1) : uniqueImages;
+        }
       }
 
       const normalizedItem = {
