@@ -49,8 +49,9 @@ function makeButtonRow(container, buttons, getActive, setActive) {
 let data = { generatedAt: null, sources: [], items: [] };
 
 async function load() {
-  // cache: 'no-store' helps if the browser wants to cache content.json.
-  const res = await fetch(`${DATA_URL}`, { cache: 'no-store' });
+  // Add timestamp to force fresh fetch and bypass all caching
+  const timestamp = new Date().getTime();
+  const res = await fetch(`${DATA_URL}?v=${timestamp}`, { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to load ${DATA_URL}: ${res.status}`);
   data = await res.json();
 }
