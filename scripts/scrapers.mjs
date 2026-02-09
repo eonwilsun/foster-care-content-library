@@ -132,46 +132,72 @@ async function scrapeFosteringSomerset() {
     const html = await response.text();
     const articles = [];
     
-    // Somerset structure: <article> ... <a href="/news/[slug]"> ... <span class="day"><span class="number">18</span> ... <span class="month">Dec</span> ... <h2 class="title"><a href="...">TITLE</a></h2> ... <div class="text">SNIPPET</div>
-    const articleRegex = /<article[^>]*>[\s\S]*?<a[^>]*href="(\/news\/[^"]+)"[^>]*style="background-image: url\(([^)]+)\)[^>]*>[\s\S]*?<span class="number">(\d+)<\/span>[\s\S]*?<span class="month">([^<]+)<\/span>[\s\S]*?<h2 class="title"><a[^>]*>([^<]+)<\/a><\/h2>[\s\S]*?<div class="text">\s*<div class="text">\s*([^<]+?)<\/div>/gi;
+    // Somerset structure: <article> with links, images, dates, and text
+    // First, find all article blocks
+    const articleBlockRegex = /<article[^>]*>([\s\S]*?)<\/article>/gi;
+    const blocks = [];
+    let blockMatch;
     
-    let match;
+    while ((blockMatch = articleBlockRegex.exec(html)) !== null && blocks.length < 10) {
+      blocks.push(blockMatch[1]);
+    }
+    
     const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth(); // 0-11
     
-    while ((match = articleRegex.exec(html)) !== null && articles.length < 10) {
-      const [, link, imageStyle, day, month, title, snippet] = match;
+    for (const block of blocks) {
+      // Extract link
+      const linkMatch = /<a[^>]*href="(\/news\/[^"]+)"/.exec(block);
+      if (!linkMatch) continue;
+      const link = linkMatch[1];
       
-      // Parse date from day/month - assume year is current or previous year
-      // If the date would be in the future, it's from last year
-      let pubDate = new Date().toISOString();
-      try {
-        const monthIndex = new Date(`${month} 1, 2000`).getMonth();
-        let year = currentYear;
-        
-        // If this month/day combo is in the future, it must be from last year or earlier
-        const testDate = new Date(year, monthIndex, parseInt(day));
-        if (testDate > new Date()) {
-          year = currentYear - 1;
-        }
-        
-        pubDate = new Date(`${month} ${day}, ${year}`).toISOString();
-      } catch (e) {
-        // Use current date if parsing fails
-      }
-      
-      // Extract image URL - Somerset uses /SiteAssetImage proxy, keep that format
+      // Extract image from style attribute (background-image: url(...))
+      const imageMatch = /background-image:\s*url\(([^)]+)\)/.exec(block);
       let imageUrl = null;
-      // imageStyle already contains the URL from the url() capture
-      if (imageStyle && imageStyle.startsWith('/SiteAssetImage')) {
-        imageUrl = `https://www.fosteringinsomerset.org.uk${imageStyle}`;
+      if (imageMatch && imageMatch[1]) {
+        const imgPath = imageMatch[1].replace(/['"]/g, '');
+        if (imgPath.startsWith('/SiteAssetImage') || imgPath.startsWith('http')) {
+          imageUrl = imgPath.startsWith('http') ? imgPath : `https://www.fosteringinsomerset.org.uk${imgPath}`;
+        }
       }
+      
+      // Extract date
+      const dayMatch = /<span class="number">(\d+)<\/span>/.exec(block);
+      const monthMatch = /<span class="month">([^<]+)<\/span>/.exec(block);
+      let pubDate = new Date().toISOString();
+      
+      if (dayMatch && monthMatch) {
+        try {
+          const day = parseInt(dayMatch[1]);
+          const month = monthMatch[1].trim();
+          const monthIndex = new Date(`${month} 1, 2000`).getMonth();
+          let year = currentYear;
+          
+          // If this month/day combo is in the future, it must be from last year
+          const testDate = new Date(year, monthIndex, day);
+          if (testDate > new Date()) {
+            year = currentYear - 1;
+          }
+          
+          pubDate = new Date(`${month} ${day}, ${year}`).toISOString();
+        } catch (e) {
+          // Keep default date
+        }
+      }
+      
+      // Extract title
+      const titleMatch = /<h2 class="title"><a[^>]*>([^<]+)<\/a><\/h2>/.exec(block);
+      if (!titleMatch) continue;
+      const title = titleMatch[1].trim();
+      
+      // Extract snippet
+      const snippetMatch = /<div class="text">\s*<div class="text">\s*([^<]+)/.exec(block);
+      const snippet = snippetMatch ? snippetMatch[1].trim().replace(/&rsquo;/g, "'").replace(/&hellip;/g, '...').replace(/\r?\n/g, ' ') : '';
       
       articles.push({
-        title: title.trim(),
+        title,
         link: `https://www.fosteringinsomerset.org.uk${link.trim()}`,
         pubDate,
-        contentSnippet: snippet ? snippet.trim().replace(/&rsquo;/g, "'").replace(/&hellip;/g, '...') : '',
+        contentSnippet: snippet,
         image: imageUrl
       });
     }
