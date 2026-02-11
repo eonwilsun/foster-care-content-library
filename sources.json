@@ -88,7 +88,7 @@
       "type": "website",
       "title": "NFG News & Blog",
       "pageUrl": "https://www.nfa.co.uk/news-and-blog/",
-      "rssUrl": "https://www.nfa.co.uk/news-and-blog/feed/"
+      "rssUrl": "https://fetchrss.com/feed/1vpN0s93T26M1vqAcT81dBHf.rss"
     },
     {
       "id": "competitor4-facebook",
@@ -116,7 +116,16 @@
       "title": "Capstone Foster Care Facebook",
       "pageUrl": "https://www.facebook.com/CapstoneFosterCarePage",
       "rssUrl": "https://fetchrss.com/feed/1vl3Fu6JL6kM1vlRjo2h12xG.rss"
-    },     
+    },
+    {
+      "id": "competitor6-facebook",
+      "company": "Foster Plus",
+      "companyGroup": "competitor",
+      "type": "facebook",
+      "title": "Foster Plus Facebook",
+      "pageUrl": "https://www.facebook.com/fosterplus",
+      "rssUrl": "https://fetchrss.com/feed/1vpN0s93T26M1vqAgq26X4UU.rss"     
+    },
     {
       "id": "competitor6-news",
       "company": "Foster Plus",
