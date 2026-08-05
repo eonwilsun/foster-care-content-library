@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T20:55:30.506Z",
+  "generatedAt": "2026-08-05T22:05:42.705Z",
   "sources": [
     {
       "id": "ours-website-news",
@@ -9,7 +9,7 @@
       "title": "Swiis Foster Care News",
       "pageUrl": "https://www.swiisfostercare.com/info-hub/",
       "rssUrl": "https://www.swiisfostercare.com/feed/",
-      "warning": "Failed to fetch/parse feed: Invalid character in entity name\nLine: 0\nColumn: 120\nChar: ="
+      "warning": "Failed to fetch/parse feed: Request timed out after 20000ms"
     },
     {
       "id": "competitor1-news",
